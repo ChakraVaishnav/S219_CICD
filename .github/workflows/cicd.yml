@@ -35,7 +35,11 @@ jobs:
       - name: Configure Git
         run: |
           git config --global user.name "ChakraVaishnav"
+<<<<<<< HEAD
           git config --global user.email "guntakachakravaishnavreddy@gmail.com"
+=======
+          git config --global user.email "guntakachakravaishnav@gmail.com"
+>>>>>>> 26896c8e70d018e1c03775b5f0f18997db9c9325
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
@@ -45,4 +49,8 @@ jobs:
           git config --global user.name "ChakraVaishnav"
           git config --global user.email "guntakachakravaishnavreddy@gmail.com"
           npm install -g gh-pages
+<<<<<<< HEAD
           gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/ChakraVaishnav/S219_CICD.git
+=======
+          gh-pages -d dist -r https://x-access-token:${GITHUB_TOKEN}@github.com/ChakraVaishnav/S219_CICD.git
+>>>>>>> 26896c8e70d018e1c03775b5f0f18997db9c9325
